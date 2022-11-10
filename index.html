@@ -575,11 +575,15 @@
           </div>
     </section>
     <section class="slide creamR">
-        <span class="shout colors deepbluetext" ><span class="green">[Nic]
-        </span></span>
+        <span class="shout colors deepbluetext" >💡 Co pojawi się w konsoli?
+            <br />
+            <span class="green">[Nic]</span>
+        </span>
     </section>
     <section class="slide creamR">
-        <span class="shout colors deepbluetext" ><span>Co pojawi się w konsoli?<br />💡
+        <span class="shout colors deepbluetext" >
+
+            <span>Co pojawi się w konsoli?<br />💡
         </span></span>
     </section>
     <section class="slide prism over bhgry">
@@ -619,7 +623,10 @@
           </div>
     </section>
     <section class="slide creamR">
-        <span class="shout colors deepbluetext" ><span class="green">Hello<br />
+        <span class="shout colors deepbluetext" >
+            💡 Co pojawi się w konsoli?
+            <br />
+            <span class="green">Hello<br />
         </span></span>
     </section>
     <section class="slide creamR">
@@ -838,50 +845,50 @@
     </pre>
 
     </section>
-    <section class="slide" style="background-color:black">
+    <section class="slide" style="background-color:whitesmoke">
         <figure>
             <img class="cover" src="pictures/01/0_000.png" alt="blog">
             <figcaption class="white">Copyright © Cezary Walenciuk</figcaption>
         </figure>
     </section>
-    <section class="slide" style="background-color:black">
+    <section class="slide" style="background-color:whitesmoke">
         <figure>
             <img class="cover" src="pictures/01/0_00.png" alt="blog">
             <figcaption class="white">Copyright © Cezary Walenciuk</figcaption>
         </figure>
     </section>
-    <section class="slide" style="background-color:black">
+    <section class="slide" style="background-color:whitesmoke">
         <figure>
             <img class="cover" src="pictures/01/0_10.png" alt="blog">
             <figcaption class="white">Copyright © Cezary Walenciuk</figcaption>
         </figure>
     </section>
-    <section class="slide" style="background-color:black">
+    <section class="slide" style="background-color:whitesmoke">
         <figure>
             <img class="cover" src="pictures/01/0_11.png" alt="blog">
             <figcaption class="white">Copyright © Cezary Walenciuk</figcaption>
         </figure>
     </section>
-    <section class="slide" style="background-color:black">
+    <section class="slide" style="background-color:whitesmoke">
         <figure>
             <img class="cover" src="pictures/01/0_12.png" alt="blog">
             <figcaption class="white">Copyright © Cezary Walenciuk</figcaption>
         </figure>
     </section>
-    <section class="slide" style="background-color:black">
+    <section class="slide" style="background-color:whitesmoke">
         <figure>
             <img class="cover" src="pictures/01/0_13.png" alt="blog">
             <figcaption class="white">Copyright © Cezary Walenciuk</figcaption>
         </figure>
     </section>
-    <section class="slide" style="background-color:black">
+    <section class="slide" style="background-color:whitesmoke">
         <figure>
             <img class="cover" src="pictures/01/0_04.png" alt="blog">
             <figcaption class="white">Copyright © Cezary Walenciuk</figcaption>
         </figure>
     </section>
 
-    <section class="slide" style="background-color:black">
+    <section class="slide" style="background-color:whitesmoke">
         <figure>
             <img class="cover" src="pictures/01/0_06.png" alt="blog">
             <figcaption class="white">Copyright © Cezary Walenciuk</figcaption>
@@ -1624,7 +1631,7 @@
     </section>
     <section class="slide" style="background-color:whitesmoke">
         <figure>
-            <img class="cover" src="pictures/07.png" alt="blog">
+            <img class="cover" src="images/maszynastanow.png" alt="blog">
             <figcaption class="white">Copyright © Cezary Walenciuk</figcaption>
         </figure>
     </section>
@@ -1715,7 +1722,9 @@
           </div>
     </section>
     <section class="slide creamR">
-        <span class="shout colors deepbluetext" ><span>💡 Co pojawi się w konsoli?<br />[Wszędzie będzie 1]
+        <span class="shout colors deepbluetext" >
+            💡 Co pojawi się w konsoli?
+            <br /><span>[Wszędzie będzie 1]
         </span></span>
     </section>
     <section class="slide greenmemory">
@@ -1782,164 +1791,11 @@
           </div>
     </section>
     <section class="slide creamR">
-        <span class="shout colors deepbluetext" ><span>💡 Co pojawi się w konsoli?<br />1,1,4,4,4,4
+        <span class="shout colors deepbluetext" >            💡 Co pojawi się w konsoli?
+            <br /><span>1,1,4,4,4,4
         </span></span>
     </section>
-    <section class="slide conicG">
-        <span class="shout colors">
-            <span>
-                TaskCompletionSource
-            </span>
-        </span>
-    </section>
-    <section class="slide greenmemory">
-        <span class="shout colors">
-            <span>
-            Pokaż jakiś fajny bajer z TaskCompletionSource
-            </span>
-        </span>
-    </section>
-    <section class="slide greenmemory">
-        <span class="shout colors smallerfontnew2">
-            <span>
-            Korzystając z TaskCompletionSource możesz opakować pewne działania, które nie zostały stworzone z myślą o "async i await".
-            </span>
-        </span>
-    </section>
-    <section class="slide prism over bhgry">
-        <div class="grid-container">
-            <div class="HeaderTitle GG">
-                <h2 class="headerCODE GG">Przykład uruchamiania procesu</h2>
-            </div>
-            <div class="PlaceCodeHere">
-                <pre style="font-size: 34px;overflow: hidden;  " class="language-csharp">
-                    <code style="line-height:34px !important;">
-                        static async Task Main()
-                        {
-                            var proces = Process.Start("notepad.exe");
-                        
-                            proces.WaitForExit();
-                        
-                            var result = proces.ExitCode;
-                        }
-                    </code>
-                </pre>
-            </div>
-          </div>
-    </section>
-    <section class="slide prism over bhgry">
-        <div class="grid-container">
-            <div class="HeaderTitle GG">
-                <h2 class="headerCODE GG">Przykład uruchamiania procesu</h2>
-            </div>
-            <div class="PlaceCodeHere">
-                <pre style="font-size: 24px;overflow: hidden;  " class="language-csharp">
-                    <code style="line-height:24px !important;">
-
-                        public static class TaskAwaiterHelper
-                        {
-                            public static TaskAwaiter&#x3C;int&#x3E; GetAwaiter(this Process process)
-                            {
-                                var tsc = new TaskCompletionSource&#x3C;int&#x3E;(
-                                    TaskCreationOptions.RunContinuationsAsynchronously);
-                        
-                                process.EnableRaisingEvents = true;
-                                process.Exited += (sender, args) =&#x3E;
-                                {
-                                    var senderProcess = sender as Process;
-                        
-                                    if (senderProcess == null)
-                                        return;
-                        
-                                    tsc.SetResult(senderProcess.ExitCode);
-                                };
-                        
-                                return tsc.Task.GetAwaiter();
-                            }
-                        }
-                    </code>
-                </pre>
-            </div>
-          </div>
-    </section>
-
-    <section class="slide greenmemory">
-        <span class="shout colors smallerfontnew2" >
-            <span>
-            Jak widzisz TaskCompletionSource posiada w sobie odpowiednie metody, aby zasymulować stworzenie Taska.
-            </span>
-        </span>
-    </section>
-    <section class="slide greenmemory">
-        <span class="shout colors smallerfontnew" >
-            <span>
-            Dodatkowo trzeba skorzystać z opcji : TaskCreationOptions.RunContinuationsAsynchronously.
-            <br /> <br />
-            Domyślne każda metoda kontynuowana pod takie Taski będą synchroniczne. 
-            <br /> 
-            Nie chcesz mieć takiej niespodzianki.
-            <br /> <br />
-            Ta opcja też ratuje Cię przed pewnymi Deadlockami stworzonymi pod wpływem mieszania asynchronicznego kodu z synchronicznym. 
-            </span>
-        </span>
-    </section>
-    <section class="slide creamR  compact">
-        <h2>Masz w TaskCompletionSource  metody do tworzenia innych stanów Taska.</h2>
-        <ol>
-            <li class="next">SetException() : Ustawia błędne zakończenie zadania</li>
-            <li class="next">SetCanceled() : Ustawia stan zadania jako odwołane</li>
-            <li class="next">SetResult()</li>
-        </ol>
-    </section>
-    <section class="slide prism over bhgry">
-        <div class="grid-container">
-            <div class="HeaderTitle GG">
-                <h2 class="headerCODE GG">Korzystając z TaskCompletionSource możesz opakować każde stare API oparte na zdarzeniach</h2>
-            </div>
-            <div class="PlaceCodeHere">
-                <pre style="font-size: 22px;overflow: hidden;  " class="language-csharp">
-                    <code style="line-height:22px !important;">
-
-                        public static Task PerformOperation(this PictureBox pictureBox)
-                        {
-                            var tcs = new TaskCompletionSource&#x3C;object&#x3E;();
-                                    
-                            // Naive version that does not unsubscribe from the event
-                            pictureBox.LoadCompleted += (s, ea) =&#x3E;
-                            {
-                                if (ea.Cancelled) tcs.SetCanceled();
-                                else if (ea.Error != null) tcs.SetException(ea.Error);
-                                else tcs.SetResult(null);
-                            };
-                         
-                            pictureBox.LoadAsync();
-                         
-                            return tcs.Task;
-                        }
-                    </code>
-                </pre>
-            </div>
-            <div class="AnswerCode">
-                <div class="pytanie">
-                    <h3></h3>
-                </div>
-                <div class="odpowiedz">
-                    
-                </div>
-            </div>
-          </div>
-    </section>
-    <section class="slide greenmemory">
-        <span class="shout colors" style="font-size: 1.5em !important">
-            <SPAN>
-            Sam TaskCompletionSource często był używany w testach jednostkowych. 
-            <br /><br />
-            Przed .NET 4.5 nie było metody Task.FromResult i to tworzyło taki mankament pisania MOCK-ów. 
-            <br /><br />
-            Zresztą w bibliotece Moq istnieje metoda ReturnAsync więc ten problem obecnie nie powinien Cię spotkać.
-            </SPAN>
-        </span>
-    </section>
+   
     <section class="slide conicG">
         <span class="shout colors">
             <span>
@@ -2212,7 +2068,7 @@
         </span>
         </span>
     </section>
-    <section class="slide creamGGGragient">
+    <section class="slide conicG ">
         <span class="shout colors deepbluetext" ><span>ValueTask vs Task<br />
         </span></span>
     </section>
@@ -2280,13 +2136,13 @@
             </div>
           </div>
     </section>
-    <section class="slide" style="background-color:black">
+    <section class="slide" style="background-color:whitesmoke">
         <figure>
             <img class="cover" src="pictures/Stackoverflow.PNG" alt="blog">
             <figcaption class="white">Copyright © Cezary Walenciuk</figcaption>
         </figure>
     </section>
-    <section class="slide" style="background-color:black">
+    <section class="slide" style="background-color:whitesmoke">
         <figure>
             <img class="cover" src="pictures/Stackoverflow-01.PNG" alt="blog">
             <figcaption class="white">Copyright © Cezary Walenciuk</figcaption>
@@ -2308,8 +2164,8 @@
             <div class="PlaceCodeHere">
                 <pre style="font-size: 20px;overflow: hidden;  " class="language-csharp">
                     <code style="line-height: 20px !important;">
-                        // Given this ValueTask<int>-returning method…
-                        public ValueTask<int> SomeValueTaskReturningMethodAsync();
+                        // Given this ValueTask&lt;int&gt;-returning method…
+                        public ValueTask&lt;int&gt; SomeValueTaskReturningMethodAsync();
                         …
 
                         // GOOD
@@ -2319,7 +2175,7 @@
                         int result = await SomeValueTaskReturningMethodAsync().ConfigureAwait(false);
                             
                         // GOOD
-                        Task<int> t = SomeValueTaskReturningMethodAsync().AsTask();
+                        Task&lt;int&gt; t = SomeValueTaskReturningMethodAsync().AsTask();
                     </code>
                 </pre>
             </div>
@@ -2342,44 +2198,207 @@
                 <pre style="font-size: 20px;overflow: hidden;  " class="language-csharp">
                     <code style="line-height: 20px !important;">
                         // WARNING
-                        ValueTask<int> vt = SomeValueTaskReturningMethodAsync();
-                        ... // storing the instance into a local makes it much more likely it'll be misused,
+                        ValueTask&lt;int&gt; vt = SomeValueTaskReturningMethodAsync();
+                        ... // storing the instance into a local makes it much more likely it&#39;ll be misused,
                             // but it could still be ok
                         
                         // BAD: awaits multiple times
-                        ValueTask<int> vt = SomeValueTaskReturningMethodAsync();
+                        ValueTask&lt;int&gt; vt = SomeValueTaskReturningMethodAsync();
                         int result = await vt;
                         int result2 = await vt;
                         
                         // BAD: awaits concurrently (and, by definition then, multiple times)
-                        ValueTask<int> vt = SomeValueTaskReturningMethodAsync();
-                        Task.Run(async () => await vt);
-                        Task.Run(async () => await vt);
+                        ValueTask&lt;int&gt; vt = SomeValueTaskReturningMethodAsync();
+                        Task.Run(async () =&gt; await vt);
+                        Task.Run(async () =&gt; await vt);
                         
-                        // BAD: uses GetAwaiter().GetResult() when it's not known to be done
-                        ValueTask<int> vt = SomeValueTaskReturningMethodAsync();
+                        // BAD: uses GetAwaiter().GetResult() when it&#39;s not known to be done
+                        ValueTask&lt;int&gt; vt = SomeValueTaskReturningMethodAsync();
                         int result = vt.GetAwaiter().GetResult();
                     </code>
                 </pre>
             </div>
           </div>
     </section>
-    <section class="slide dosblue">
+    <section class="slide conicG">
         <span class="shout colors">
             <span>
             BONUS
             </span>
         </span>
     </section>
+    <section class="slide conicG">
+        <span class="shout colors">
+            <span>
+                TaskCompletionSource
+            </span>
+        </span>
+    </section>
+    <section class="slide greenmemory">
+        <span class="shout colors">
+            <span>
+            Pokaż jakiś fajny bajer z TaskCompletionSource
+            </span>
+        </span>
+    </section>
+    <section class="slide greenmemory">
+        <span class="shout colors smallerfontnew2">
+            <span>
+            Korzystając z TaskCompletionSource możesz opakować pewne działania, które nie zostały stworzone z myślą o "async i await".
+            </span>
+        </span>
+    </section>
     <section class="slide prism over bhgry">
         <div class="grid-container">
             <div class="HeaderTitle GG">
-                <h2 class="headerCODE GG">new ValueTask</h2>
+                <h2 class="headerCODE GG">Przykład uruchamiania procesu</h2>
             </div>
             <div class="PlaceCodeHere">
-                <pre style="font-size: 14px;overflow: hidden;  " class="language-csharp">
-                    <code style="line-height: 14px !important;">
-                        async IAsyncEnumerable<string> 
+                <pre style="font-size: 34px;overflow: hidden;  " class="language-csharp">
+                    <code style="line-height:34px !important;">
+                        static async Task Main()
+                        {
+                            var proces = Process.Start("notepad.exe");
+                        
+                            proces.WaitForExit();
+                        
+                            var result = proces.ExitCode;
+                        }
+                    </code>
+                </pre>
+            </div>
+          </div>
+    </section>
+    <section class="slide prism over bhgry">
+        <div class="grid-container">
+            <div class="HeaderTitle GG">
+                <h2 class="headerCODE GG">Przykład uruchamiania procesu</h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 24px;overflow: hidden;  " class="language-csharp">
+                    <code style="line-height:24px !important;">
+
+                        public static class TaskAwaiterHelper
+                        {
+                            public static TaskAwaiter&#x3C;int&#x3E; GetAwaiter(this Process process)
+                            {
+                                var tsc = new TaskCompletionSource&#x3C;int&#x3E;(
+                                    TaskCreationOptions.RunContinuationsAsynchronously);
+                        
+                                process.EnableRaisingEvents = true;
+                                process.Exited += (sender, args) =&#x3E;
+                                {
+                                    var senderProcess = sender as Process;
+                        
+                                    if (senderProcess == null)
+                                        return;
+                        
+                                    tsc.SetResult(senderProcess.ExitCode);
+                                };
+                        
+                                return tsc.Task.GetAwaiter();
+                            }
+                        }
+                    </code>
+                </pre>
+            </div>
+          </div>
+    </section>
+
+    <section class="slide greenmemory">
+        <span class="shout colors smallerfontnew2" >
+            <span>
+            Jak widzisz TaskCompletionSource posiada w sobie odpowiednie metody, aby zasymulować stworzenie Taska.
+            </span>
+        </span>
+    </section>
+    <section class="slide greenmemory">
+        <span class="shout colors smallerfontnew" >
+            <span>
+            Dodatkowo trzeba skorzystać z opcji : TaskCreationOptions.RunContinuationsAsynchronously.
+            <br /> <br />
+            Domyślne każda metoda kontynuowana pod takie Taski będą synchroniczne. 
+            <br /> 
+            Nie chcesz mieć takiej niespodzianki.
+            <br /> <br />
+            Ta opcja też ratuje Cię przed pewnymi Deadlockami stworzonymi pod wpływem mieszania asynchronicznego kodu z synchronicznym. 
+            </span>
+        </span>
+    </section>
+    <section class="slide creamR  compact">
+        <h2>Masz w TaskCompletionSource  metody do tworzenia innych stanów Taska.</h2>
+        <ol>
+            <li class="next">SetException() : Ustawia błędne zakończenie zadania</li>
+            <li class="next">SetCanceled() : Ustawia stan zadania jako odwołane</li>
+            <li class="next">SetResult()</li>
+        </ol>
+    </section>
+    <section class="slide prism over bhgry">
+        <div class="grid-container">
+            <div class="HeaderTitle GG">
+                <h2 class="headerCODE GG">Korzystając z TaskCompletionSource możesz opakować każde stare API oparte na zdarzeniach</h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 22px;overflow: hidden;  " class="language-csharp">
+                    <code style="line-height:22px !important;">
+
+                        public static Task PerformOperation(this PictureBox pictureBox)
+                        {
+                            var tcs = new TaskCompletionSource&#x3C;object&#x3E;();
+                                    
+                            // Naive version that does not unsubscribe from the event
+                            pictureBox.LoadCompleted += (s, ea) =&#x3E;
+                            {
+                                if (ea.Cancelled) tcs.SetCanceled();
+                                else if (ea.Error != null) tcs.SetException(ea.Error);
+                                else tcs.SetResult(null);
+                            };
+                         
+                            pictureBox.LoadAsync();
+                         
+                            return tcs.Task;
+                        }
+                    </code>
+                </pre>
+            </div>
+            <div class="AnswerCode">
+                <div class="pytanie">
+                    <h3></h3>
+                </div>
+                <div class="odpowiedz">
+                    
+                </div>
+            </div>
+          </div>
+    </section>
+    <section class="slide greenmemory">
+        <span class="shout colors" style="font-size: 1.5em !important">
+            <SPAN>
+            Sam TaskCompletionSource często był używany w testach jednostkowych. 
+            <br /><br />
+            Przed .NET 4.5 nie było metody Task.FromResult i to tworzyło taki mankament pisania MOCK-ów. 
+            <br /><br />
+            Zresztą w bibliotece Moq istnieje metoda ReturnAsync więc ten problem obecnie nie powinien Cię spotkać.
+            </SPAN>
+        </span>
+    </section>
+    <section class="slide conicG">
+        <span class="shout colors">
+            <span>
+              IAsyncEnumerable
+            </span>
+        </span>
+    </section>
+    <section class="slide prism over bhgry">
+        <div class="grid-container">
+            <div class="HeaderTitle GG">
+                <h2 class="headerCODE GG">IAsyncEnumerable</h2>
+            </div>
+            <div class="PlaceCodeHere">
+                <pre style="font-size: 30px;overflow: hidden;  " class="language-csharp">
+                    <code style="line-height: 30px !important;">
+
+                        async IAsyncEnumerable&lt;string&gt; 
                             GetTexts4(string game)
                         {
                             using var client = new HttpClient();
@@ -2389,8 +2408,8 @@
                             foreach (var id in ids)
                             {
                                 var text = await client.
-                                    GetFromJsonAsync<string>
-                                    ($"/api/texts?id={id}&game={game}");
+                                    GetFromJsonAsync&lt;string&gt;
+                                    ($&quot;/api/texts?id={id}&amp;game={game}&quot;);
                         
                                 yield return text;
                             }
@@ -2403,13 +2422,13 @@
     <section class="slide prism over bhgry">
         <div class="grid-container">
             <div class="HeaderTitle GG">
-                <h2 class="headerCODE GG">new ValueTask</h2>
+                <h2 class="headerCODE GG">IAsyncEnumerable</h2>
             </div>
             <div class="PlaceCodeHere">
-                <pre style="font-size: 14px;overflow: hidden;  " class="language-csharp">
-                    <code style="line-height: 14px !important;">
+                <pre style="font-size: 24px;overflow: hidden;  " class="language-csharp">
+                    <code style="line-height: 24px !important;">
                         //BAD IDEA
-                        async Task<IAsyncEnumerable<string>> 
+                        async Task&lt;IAsyncEnumerable&lt;string&gt;&gt; 
                             GetTextsFromGame()
                         {
                             var game = await GetGame();
@@ -2418,7 +2437,7 @@
                         
                         
                         //GOOD IDEA
-                        async IAsyncEnumerable<string> 
+                        async IAsyncEnumerable&lt;string&gt; 
                             GetTexts5()
                         {
                             var game = await GetGame();
@@ -2442,11 +2461,11 @@
     <section class="slide prism over bhgry">
         <div class="grid-container">
             <div class="HeaderTitle GG">
-                <h2 class="headerCODE GG">new ValueTask</h2>
+                <h2 class="headerCODE GG">Przykład</h2>
             </div>
             <div class="PlaceCodeHere">
-                <pre style="font-size: 14px;overflow: hidden;  " class="language-csharp">
-                    <code style="line-height: 14px !important;">
+                <pre style="font-size: 12px;overflow: hidden;  " class="language-csharp">
+                    <code style="line-height: 12px !important;">
                         var urls = new List<string>()
                             {
                                 "https://cezarywalenciuk.pl/",
@@ -2494,11 +2513,12 @@
     <section class="slide prism over bhgry">
         <div class="grid-container">
             <div class="HeaderTitle GG">
-                <h2 class="headerCODE GG">new ValueTask</h2>
+                <h2 class="headerCODE GG">ToAsyncEnumerable()</h2>
             </div>
             <div class="PlaceCodeHere">
-                <pre style="font-size: 14px;overflow: hidden;  " class="language-csharp">
-                    <code style="line-height: 14px !important;">
+                <pre style="font-size: 17px;overflow: hidden;  " class="language-csharp">
+                    <code style="line-height: 17px !important;">
+
                         async Task SolutionOne()
                         {
                             using var client = new HttpClient();
@@ -2537,11 +2557,12 @@
     <section class="slide prism over bhgry">
         <div class="grid-container">
             <div class="HeaderTitle GG">
-                <h2 class="headerCODE GG">new ValueTask</h2>
+                <h2 class="headerCODE GG">await Task.WhenAll(tasks);</h2>
             </div>
             <div class="PlaceCodeHere">
-                <pre style="font-size: 14px;overflow: hidden;  " class="language-csharp">
-                    <code style="line-height: 14px !important;">
+                <pre style="font-size: 16px;overflow: hidden;  " class="language-csharp">
+                    <code style="line-height: 16px !important;">
+
                         async Task SolutionTwo()
                         {
                             using var client = new HttpClient();
@@ -2582,11 +2603,11 @@
     <section class="slide prism over bhgry">
         <div class="grid-container">
             <div class="HeaderTitle GG">
-                <h2 class="headerCODE GG">new ValueTask</h2>
+                <h2 class="headerCODE GG"> await Parallel.ForEachAsync</h2>
             </div>
             <div class="PlaceCodeHere">
-                <pre style="font-size: 14px;overflow: hidden;  " class="language-csharp">
-                    <code style="line-height: 14px !important;">
+                <pre style="font-size: 15px;overflow: hidden;  " class="language-csharp">
+                    <code style="line-height: 15px !important;">
                         //Równolegle
                         async Task SolutionThree()
                         {
@@ -2624,6 +2645,22 @@
                 </pre>
             </div>
           </div>
+    </section>
+    <section class="slide conicG">
+        <span class="shout colors">
+            <span>
+              To nie koniec?
+            </span>
+        </span>
+    </section>
+    <section class="slide creamGrey  compact ">
+        <h2>A gdzie tam</h2>
+        <ol>
+            <li class="next">Jak działa "lock" ?</li>
+            <li class="next">A co z kolekcjami stworzone z myślą o asynchroniczoności?</li>
+            <li class="next">Co robi słowo kluczowe <span class="green">volatile</span> i kiedy go użyć?</li>
+            <li class="next">Channels</li>
+        </ol>
     </section>
 
     <!-- <div class="progress"></div> -->
